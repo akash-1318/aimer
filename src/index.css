@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+  --white-color : #ffffff;
+  --black-color : #000000;
+}
+
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  color: var(--white-color);
 }
 
 html{
   font-size:62.5%;
-  font-family: 'Roboto', sans-serif;
-  color: var(--font-color);
+  font-family: 'Open Sans', sans-serif;
 }
