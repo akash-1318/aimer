@@ -14,6 +14,7 @@ const Enter = () => {
             onKeyPress={(e) => {
                 if(e.key == "Enter") {
                     localStorage.setItem("username", name)
+                    window.location.reload()
                 }
             }}
           />
@@ -22,6 +23,7 @@ const Enter = () => {
           <div className="btn__container">
             <button className="primary__btn" onClick={()=> {
                 localStorage.setItem("username", name)
+                window.location.reload()
             }}>
               <i class="bx bx-chevrons-right"></i>
             </button>
