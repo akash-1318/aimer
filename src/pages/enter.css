@@ -28,7 +28,7 @@
 .name__input{
     background:transparent;
     border: none;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid var(--white-color);
     width: 45rem;
     text-align: center;
     outline: none;
@@ -75,7 +75,7 @@
 }
 
 .primary__btn > i{
-    color: black;
+    color: var(--black-color);
 }
 
 .btn__container{
