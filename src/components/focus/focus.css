@@ -1,0 +1,156 @@
+.focus__text{
+    font-size: 5rem;
+}
+
+.focus__input{
+    background:transparent;
+    border: none;
+    border-bottom: 3px solid var(--white-color);
+    width: 65rem;
+    text-align: center;
+    outline: none;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    padding: 1rem;
+}
+
+.focus__sub-text{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 3rem;
+}
+
+.focus__section{
+    margin-top: 1rem;
+}
+
+.focus__section-text{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.focus__section-text.strike{
+    text-decoration: line-through;
+}
+
+.edit__btn{
+    font-size: 2rem;
+    background-color: rgba(0,0,0,.3);
+    color: var(--white-color);
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.delete__btn{
+    font-size: 2rem;
+    background-color: rgba(0,0,0,.3);
+    color: var(--white-color);
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;  
+    margin: 0rem 2rem;  
+}
+
+.focus__section{
+    display: flex;
+}
+
+.check__input{
+    appearance: none;
+    width: 2.2rem;
+	height: 2.2rem;
+	color: var(--white-color);
+	border: 0.2rem solid var(--white-color);
+	border-radius: 0.5rem;
+	place-content: center;
+}
+
+
+
+
+
+
+
+
+label {
+	display: flex; 
+    align-items: center; 
+	color: var(--white-color);
+	position: relative;
+}
+
+input {
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+label > span {
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	border: 2px solid var(--white-color);
+	margin-right: 15px;
+	border-radius: 3px;
+	transition: all .3s;
+}
+
+input:checked + label > span {
+	border: 10px solid rgba(0,0,0,.3);
+	animation: bounce 250ms;
+}
+
+input:checked + label > span::before {
+	content: '';
+	position: absolute;
+	left: 4px;
+    bottom: 1.2rem;
+	border-right: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	transform: rotate(45deg);
+	transform-origin: 0% 100%;
+	animation: checked-box 125ms 250ms forwards;
+}
+
+@keyframes checked-box {
+	0% {
+		width: 0;
+		height: 0;
+		border-color: var(--white-color);
+		transform: translate(0,0) rotate(45deg);
+	}
+	33% {
+		width: 4px;
+		height: 0;
+		border-color: var(--white-color);
+		transform: translate(0,0) rotate(45deg);
+	}
+	100% {
+		width: 4px;
+		height: 8px;
+		border-color: var(--white-color);
+		transform: translate(0,-8px) rotate(45deg);
+	}
+}
+
+@keyframes bounce {
+	0% {
+		transform: scale(1);
+	}
+	33% {
+		transform: scale(.7);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

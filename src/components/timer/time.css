@@ -12,6 +12,8 @@
 .greeting__para{
     font-size: 7rem;
     font-weight: 700;
+    margin-top: -20px;
+    margin-bottom: 10px;
 }
 
 .date__btn{
@@ -25,7 +27,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin-left: 4rem;
+    margin-left: 1rem;
     visibility: hidden;
 }
 
