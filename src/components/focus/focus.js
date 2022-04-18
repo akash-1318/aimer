@@ -30,6 +30,7 @@ const Focus = () => {
             }}
             type="checkbox" 
             checked = {localStorage.getItem("strike")}
+            className="checkbox__input"
             id="one"/>
             <label for="one" className={`focus__section-text ${strike ? "strike" : ""}`}>
                 <span></span> {localStorage.getItem("focus")}

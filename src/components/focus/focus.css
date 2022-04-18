@@ -74,27 +74,20 @@
 	place-content: center;
 }
 
-
-
-
-
-
-
-
-label {
+.focus__section-text {
 	display: flex; 
     align-items: center; 
 	color: var(--white-color);
 	position: relative;
 }
 
-input {
+.checkbox__input {
 	width: 0;
 	height: 0;
 	opacity: 0;
 }
 
-label > span {
+.focus__section-text > span {
 	width: 20px;
 	height: 20px;
 	display: flex;
@@ -105,12 +98,12 @@ label > span {
 	transition: all .3s;
 }
 
-input:checked + label > span {
+.checkbox__input:checked + .focus__section-text > span {
 	border: 10px solid rgba(0,0,0,.3);
 	animation: bounce 250ms;
 }
 
-input:checked + label > span::before {
+.checkbox__input:checked + .focus__section-text > span::before {
 	content: '';
 	position: absolute;
 	left: 4px;
