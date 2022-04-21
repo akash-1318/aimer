@@ -115,6 +115,16 @@
 	animation: checked-box 125ms 250ms forwards;
 }
 
+.greeting__word{
+    opacity: 0;
+    margin-top: 3rem;
+}
+
+.greeting__word.show{
+    opacity: 0.9;
+    transition: .3s ease-in-out;
+}
+
 @keyframes checked-box {
 	0% {
 		width: 0;

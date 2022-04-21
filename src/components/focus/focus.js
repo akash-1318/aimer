@@ -5,7 +5,17 @@ const Focus = () => {
   const [focus, setFocus] = useState("");
   const [focusText, setFocusText] = useState("");
   const [editText, setEditText] = useState("");
-  const [strike, setStrike] = useState(false)
+  const [strike, setStrike] = useState(false);
+  const [appr, setAppre] = useState("")
+
+  const appreciation_words = [
+    "Nice!",
+    "Nicely done!",
+    "You're the best!",
+    "Great work!",
+    "This is great!",
+    "Way to go!",
+];
 
   useEffect(() => {
     localStorage.getItem("focus") &&
@@ -27,6 +37,8 @@ const Focus = () => {
                 localStorage.removeItem("strike")
                 setStrike(false)
             }
+            const random = Math.floor(Math.random() * 6)
+            setAppre(appreciation_words[random])
             }}
             type="checkbox" 
             checked = {localStorage.getItem("strike")}
@@ -41,6 +53,8 @@ const Focus = () => {
               setEditText("");
               localStorage.removeItem("focus");
               setFocusText("");
+              localStorage.removeItem("strike")
+              setStrike(false)
             }}
           >
             <i class="bx bx-x"></i>
@@ -51,10 +65,15 @@ const Focus = () => {
               setEditText(localStorage.getItem("focus"));
               localStorage.removeItem("focus");
               setFocusText("");
+              localStorage.removeItem("strike")
+              setStrike(false)
             }}
           >
             <i class="bx bx-edit-alt"></i>
           </button>
+          </div>
+          <div>
+              <h1 className={`greeting__word ${strike && "show"}`}>{appr}</h1>
           </div>
         </div>
       ) : (
