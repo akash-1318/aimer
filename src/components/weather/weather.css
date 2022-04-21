@@ -1,0 +1,110 @@
+.weather__main-container{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.search__city{
+    display: none;
+}
+
+.weather__hover:hover>.search__city{
+    transition: .2s ease-in;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search__city > i{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.input__city{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--white-color);
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.primary__temp{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.primary__temp > i{
+    font-size: 3rem;
+    color: var(--black-color);
+    margin-right: 1rem;
+}
+
+.temp__num{
+    font-size: 2.5rem;
+}
+
+.city__name{
+    font-size: 1.5rem;
+}
+
+.detailed__temp{
+    width: 25rem;
+    background-color: rgba(0,0,0,0.8);
+    margin-top: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+    transform: translateX(40rem);
+}
+
+.detailed__temp.show{
+    transition: .2s ease-in-out;
+    transform: translateX(0rem);
+}
+
+.primary__text{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.secondary__text,.time{
+    font-size: 1.5rem;
+    margin-top: .5rem;
+}
+
+.hr__line{
+    margin: 1.5rem 0rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    height: 1px;
+}
+
+.weather__img{
+    height: 6rem;
+    width: 7rem;
+}
+
+.temperature{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.sky{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+
+.humadity{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.err__msg{
+    text-align: right;
+    margin-top: 1rem;
+}
