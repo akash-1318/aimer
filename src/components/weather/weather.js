@@ -105,7 +105,7 @@ const Weather = () => {
         )}
       </div>
       <div className={`detailed__temp ${showDetails ? "show" : ""}`}>
-        <p className="primary__text">{weather.city}</p>
+        <p className="weather__primary__text">{weather.city}</p>
         <p className="secondary__text">
           {date.day}, {date.month} {date.date}, {date.year}
         </p>

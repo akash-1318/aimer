@@ -1,0 +1,29 @@
+.setting__main-container{
+    position: absolute;
+    bottom: .5rem;
+    left: 2rem;
+    text-align: left;
+}
+
+.sub__container > i{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.edit__conatiner{
+    background-color: rgba(0,0,0,0.8);
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    margin-bottom: .5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.edit__conatiner:hover{
+    text-decoration: underline;
+}
+
+.edit__conatiner.show{
+    display: flex;
+}
