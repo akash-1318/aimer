@@ -6,7 +6,7 @@ const Focus = () => {
   const [focusText, setFocusText] = useState("");
   const [editText, setEditText] = useState("");
   const [strike, setStrike] = useState(false);
-  const [appr, setAppre] = useState("")
+  const [appreciate, setAppreciate] = useState("")
 
   const appreciation_words = [
     "Nice!",
