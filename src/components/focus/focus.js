@@ -38,7 +38,7 @@ const Focus = () => {
                 setStrike(false)
             }
             const random = Math.floor(Math.random() * 6)
-            setAppre(appreciation_words[random])
+            setAppreciate(appreciation_words[random])
             }}
             type="checkbox" 
             checked = {localStorage.getItem("strike")}
@@ -73,7 +73,7 @@ const Focus = () => {
           </button>
           </div>
           <div>
-              <h1 className={`greeting__word ${strike && "show"}`}>{appr}</h1>
+              <h1 className={`greeting__word ${strike && "show"}`}>{appreciate}</h1>
           </div>
         </div>
       ) : (
