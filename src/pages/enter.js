@@ -12,7 +12,7 @@ const Enter = () => {
             type="text"
             onChange={(e) => setName(e.target.value.trim())}
             onKeyPress={(e) => {
-                if(e.key == "Enter") {
+                if(e.key === "Enter") {
                     localStorage.setItem("username", name)
                     window.location.reload()
                 }

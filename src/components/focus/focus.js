@@ -87,7 +87,7 @@ const Focus = () => {
               setFocus(e.target.value);
             }}
             onKeyPress={(e) => {
-              if (e.key == "Enter") {
+              if (e.key === "Enter") {
                 localStorage.setItem("focus", focus);
               }
               setFocusText(localStorage.getItem("focus"));
